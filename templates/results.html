@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Recommendations</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='styleResults.css') }}"
+    />
+  </head>
+  <body>
+    <div class="title-container">
+      <h1 class="title">
+        <span>R</span>
+        <span>e</span>
+        <span>c</span>
+        <span>o</span>
+        <span>m</span>
+        <span>m</span>
+        <span>e</span>
+        <span>n</span>
+        <span>d</span>
+        <span>e</span>
+        <span>d</span>
+        <span> </span>
+        <span>M</span>
+        <span>o</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>s</span>
+      </h1>
+    </div>
+    <div class="movie-container">
+      {% for movie in movies %}
+      <div
+        class="movie-card"
+        style="background-image: url('{{ movie.thumbnail }}');"
+      >
+        <div class="movie-number">{{ loop.index }}</div>
+        <div class="movie-details">
+          <h2 class="movie-title">{{ movie.title }}</h2>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>

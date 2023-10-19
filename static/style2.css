@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+label, input, select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+    border-bottom: none;
+}

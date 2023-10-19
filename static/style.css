@@ -1,0 +1,84 @@
+body {
+    background-image: url("/static/background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 300px;
+    background-color: rgba(50, 50, 50, 0.8);  /* Gri-siyah yarı saydam arkaplan */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s ease-in-out;
+}
+
+form:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+h1 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+label, input, select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #022c04;
+    transform: scale(1.05);  /* Düğmeyi biraz büyüt */
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);  /* Gölge ekler */
+}
+
+
+/* Liste stil ayarları */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+    border-bottom: none;
+}

@@ -1,5 +1,7 @@
 This project was made for a software engineering course project.
 
+The aim of the project is to make the most appropriate movie recommendation based on the information given by the user.
+
 To run the project , just simply run main.py file.
 
 Marmara University 2023
